@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mirror Maze — Dual-world Mirror Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Mirror Maze — Dual-world Mirror Puzzle</h1>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="info">
+          Level: <span id="level">1</span> · Lives: <span id="lives">3</span> · Best: <span id="best">1</span>
+        </div>
+        <div class="controls">
+          <button id="pauseBtn" class="btn">⏸ Pause</button>
+          <button id="restartBtn" class="btn">🔁 Restart</button>
+        </div>
+      </div>
+    </header>
+
+    <canvas id="game" width="960" height="540" aria-label="Mirror Maze game canvas"></canvas>
+
+    <div class="footer">
+      Controls: ← / → to move, ↑ / Space to jump. On mobile: tap left/right to move, top to jump.
+      The bottom world mirrors horizontally — move carefully!
+    </div>
+  </div>
+
+  <!-- Templates -->
+  <template id="game-over-template">
+    <div class="modal">
+      <h2>Game Over</h2>
+      <p>You reached Level <strong id="final-level">1</strong>.</p>
+      <button id="restart-final" class="btn">🔁 Play Again</button>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
