@@ -1,7 +1,7 @@
 # 🧩 Mirror Maze
 
 **Mirror Maze** is a **dual-world puzzle game** where you must control two characters at once: one in the normal world and one in the mirrored world. Every move you make is mirrored, meaning you’ll need to carefully navigate both worlds simultaneously to survive and win.
-
+ 
 ---
 
 ## 🚀 How to Play
